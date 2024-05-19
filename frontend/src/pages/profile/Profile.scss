@@ -1,0 +1,37 @@
+.profile {
+    .card {
+      max-width: 500px;
+     
+      flex-direction: row;
+      color: white;
+      
+  
+      padding: 1rem 0;
+  
+      span.profile-photo {
+        text-align: center;
+      
+      }
+  
+      img {
+        width: 100%;
+        max-width: 150px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        border-radius: 2rem;
+      }
+      span.profile-data {
+        margin: 10px;
+      }
+      span.profile-data > * {
+        margin: 10px;
+        padding: 10px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    span.profile-photo {
+      margin: auto;
+    }
+  }

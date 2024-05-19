@@ -1,0 +1,15 @@
+nav {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #fff;
+    background-color: #f88379;
+    width: 100% ;
+    position: fixed;   
+    top: 0;           
+    left: 0;
+    
+    
+    & > .logo {
+      color: #fff;
+    }
+  }

@@ -1,0 +1,105 @@
+
+.staff-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    
+   
+  }
+
+  
+
+  .staff-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .staff-photo {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    border-radius: 50%; /* To make the image circular */
+    margin-right: 20px; /* Add space between the image and details */
+  }
+  
+  .staff-details {
+    flex: 1; /* Allow the details to take up remaining space */
+  }
+  
+  .staff-details h2 {
+    margin: 0;
+    font-size: 1.2rem; /* Adjust font size as needed */
+  }
+  
+  .staff-details p {
+    margin: 5px 0; /* Adjust margin as needed */
+    font-size: 0.9rem; /* Adjust font size as needed */
+  }
+  
+
+  .product-list {
+    color: #333;
+    .table {
+      padding: 5px;
+      width: 100%;
+      overflow-x: auto;
+  
+      .search {
+        width: 100%;
+        max-width: 300px;
+      }
+  
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 1.4rem;
+  
+        thead {
+          border-top: 4px solid var(#272727);
+          border-bottom: 4px solid var(#272727);
+        }
+  
+        th {
+          border: 1px solid #eee;
+        }
+  
+        th,
+        td {
+          vertical-align: top;
+          text-align: left;
+          padding: 8px;
+  
+          &.icons {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            > * {
+              margin-right: 7px;
+              cursor: pointer;
+              vertical-align: middle;
+              align-self: center;
+            }
+          }
+        }
+  
+        tr {
+          border-bottom: 1px solid #ccc;
+        }
+  
+        tr:nth-child(even) {
+          background-color: #fff;
+        }
+        tbody {
+          tr:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+    }
+  }
